@@ -26,20 +26,21 @@ export default function PageHero({ eyebrow, title, subtitle, image, imageAlt, br
             </div>
             <div className="absolute inset-0 aviation-grid opacity-20" aria-hidden="true" />
 
-            <div className="container-sacs relative z-10">
-                <div className="mb-6">
+            <div className="container-sacs relative z-10 text-center flex flex-col items-center">
+                <div className="mb-6 flex justify-center">
                     <Breadcrumbs items={breadcrumbs} />
                 </div>
-                <div className="max-w-3xl">
-                    <div className="flex items-center gap-3 mb-4">
+                <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
+                    <div className="flex items-center justify-center gap-3 mb-4">
+                        <span className="h-px w-8 bg-gradient-to-r from-transparent to-[#8CCBFF]" />
                         <span className="eyebrow-light">{eyebrow}</span>
-                        <span className="h-px w-8 bg-gradient-to-r from-[#E0BEC8] to-transparent" />
+                        <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#8CCBFF]" />
                     </div>
-                    <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-[52px] leading-[1.1] text-white text-balance">
+                    <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-[50px] leading-[1.1] text-white text-balance text-center">
                         {title}
                     </h1>
                     {subtitle && (
-                        <p className="mt-5 text-base md:text-lg text-white/70 leading-relaxed max-w-2xl text-pretty">
+                        <p className="mt-4 text-[13.5px] sm:text-[14.5px] md:text-[15px] font-medium text-[#8CCBFF] leading-relaxed max-w-2xl text-pretty text-center">
                             {subtitle}
                         </p>
                     )}

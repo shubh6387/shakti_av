@@ -47,8 +47,23 @@ export default function ServiceDetailPage() {
 
             {/* Hero */}
             <section className="relative pt-[120px] pb-16 lg:pt-[160px] lg:pb-20 overflow-hidden bg-[#2A1F4A]">
-                <div className="absolute inset-0 aviation-grid opacity-20" aria-hidden="true" />
-                <div className="absolute -right-20 -top-20 w-72 h-72 rounded-full border border-white/5" aria-hidden="true" />
+                {/* Background image */}
+                {service.image && (
+                    <div className="absolute inset-0 select-none pointer-events-none">
+                        <ImageWithFallback
+                            src={service.image}
+                            alt={`${service.title} background`}
+                            className="w-full h-full object-cover scale-[1.02] transform-gpu"
+                            loading="eager"
+                        />
+                        {/* Multi-stage gradient overlay: deep purple/navy left mask for maximum text contrast, gentle vignette, bottom fade */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#170F28]/95 via-[#2A1F4A]/85 md:via-[#2A1F4A]/80 to-[#2A1F4A]/60" />
+                        <div className="absolute inset-0 bg-gradient-to-b from-[#140C24]/80 via-transparent to-[#2A1F4A]/95" />
+                    </div>
+                )}
+
+                <div className="absolute inset-0 aviation-grid opacity-20 pointer-events-none" aria-hidden="true" />
+                <div className="absolute -right-20 -top-20 w-72 h-72 rounded-full border border-white/5 pointer-events-none" aria-hidden="true" />
 
                 <div className="container-sacs relative z-10">
                     <div className="mb-6">
@@ -56,15 +71,18 @@ export default function ServiceDetailPage() {
                     </div>
                     <div className="max-w-3xl">
                         <div className="flex items-center gap-4 mb-6">
-                            <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#A34354]/20">
+                            <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 shadow-inner">
                                 <Icon className="w-7 h-7 text-[#E0BEC8]" />
                             </span>
-                            <span className="eyebrow-light">Service</span>
+                            <div className="flex items-center gap-2.5">
+                                <span className="h-px w-6 bg-gradient-to-r from-[#8CCBFF] to-transparent" />
+                                <span className="eyebrow-light text-[#8CCBFF]">Service</span>
+                            </div>
                         </div>
-                        <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-[52px] leading-[1.1] text-white text-balance">
+                        <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-[52px] leading-[1.1] text-white text-balance drop-shadow-sm">
                             {service.title}
                         </h1>
-                        <p className="mt-5 text-base md:text-lg text-white/70 leading-relaxed max-w-2xl text-pretty">
+                        <p className="mt-5 text-base md:text-lg text-white/85 leading-relaxed max-w-2xl text-pretty drop-shadow-xs">
                             {service.shortDescription}
                         </p>
                     </div>
@@ -154,7 +172,7 @@ export default function ServiceDetailPage() {
             {/* Related services */}
             <section className="py-16 lg:py-20 bg-section-alt">
                 <div className="container-sacs">
-                    <h2 className="font-display font-bold text-2xl text-gray-900 mb-8">Related Services</h2>
+                    <h2 className="font-display font-bold text-2xl text-gray-900 mb-8 text-center">Related Services</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {related.map((s) => {
                             const RelatedIcon = s.icon;

@@ -5,6 +5,8 @@ import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/SectionHeading';
 import CTASection from '@/components/CTASection';
 import ImageWithFallback from '@/components/ImageWithFallback';
+import YellowBorderBeam from '@/components/YellowBorderBeam';
+import TeamCard from '@/components/TeamCard';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { teamMembers } from '@/data/team';
 
@@ -67,28 +69,36 @@ export default function AboutPage() {
             />
 
             {/* Company Overview */}
-            <section className="py-20 lg:py-28">
+            <section className="py-20 lg:py-28 overflow-hidden">
                 <div className="container-sacs">
+                    <SectionHeading
+                        eyebrow="Company Overview"
+                        title="A Consultancy Built on Real Aviation Experience"
+                        subtitle="Bridging the gap between deep civil aviation expertise and complex infrastructure execution."
+                        className="mb-14"
+                    />
                     <div ref={overviewRef} className="reveal grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                        <div className="relative">
-                            <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-lg">
+                        <div className="reveal-slide-left relative">
+                            <div className="image-card-animated relative rounded-2xl overflow-hidden aspect-[4/3] shadow-lg group">
+                                <YellowBorderBeam rx={16} />
                                 <ImageWithFallback
                                     src="https://images.pexels.com/photos/36011550/pexels-photo-36011550.jpeg?auto=compress&cs=tinysrgb&w=900&h=675&dpr=1"
                                     alt="Modern airport terminal interior architecture"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <div className="absolute -top-5 -right-5 bg-[#402E6D] text-white rounded-xl p-5 shadow-lg max-w-[200px]">
+                            <div className="card-sacs absolute -top-4 right-2 sm:-top-5 sm:-right-5 bg-[#402E6D] text-white rounded-xl p-4 sm:p-5 shadow-lg max-w-[170px] sm:max-w-[200px] group overflow-hidden">
+                                <YellowBorderBeam rx={12} />
+                                {/* Subtle radar pulse behind milestone badge */}
+                                <div className="absolute -top-3 -right-3 w-16 h-16 pointer-events-none overflow-visible flex items-center justify-center">
+                                    <span className="absolute w-8 h-8 rounded-full border border-[#8CCBFF]/35 animate-radar-ring-1" />
+                                    <span className="absolute w-8 h-8 rounded-full border border-[#168DE2]/25 animate-radar-ring-2" />
+                                </div>
                                 <p className="font-display font-bold text-3xl">30+</p>
                                 <p className="text-[13px] text-white/70 mt-1">Years of experience among senior professionals</p>
                             </div>
                         </div>
-                        <div>
-                            <SectionHeading
-                                eyebrow="Company Overview"
-                                title="A Consultancy Built on Real Aviation Experience"
-                                className="mb-6"
-                            />
+                        <div className="reveal-slide-right">
                             <div className="space-y-4 text-[15px] md:text-[16px] leading-relaxed text-gray-600">
                                 <p>
                                     Sakthi Aviation Consultancy Services Private Limited (SACS) was established in 2005
@@ -190,17 +200,17 @@ export default function AboutPage() {
                             align="center"
                             className="mb-14"
                         />
-                    </div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                        {expertiseAreas.map((area) => (
-                            <div
-                                key={area}
-                                className="flex items-center gap-2.5 p-4 rounded-xl border border-gray-100 bg-white hover:shadow-md transition-all"
-                            >
-                                <CheckCircle2 className="w-4 h-4 text-[#A34354] flex-shrink-0" />
-                                <span className="text-[13px] font-medium text-gray-700 leading-snug">{area}</span>
-                            </div>
-                        ))}
+                        <div className="reveal-stagger grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                            {expertiseAreas.map((area) => (
+                                <div
+                                    key={area}
+                                    className="flex items-center gap-2.5 p-4 rounded-xl border border-gray-100 bg-white hover:shadow-md transition-all"
+                                >
+                                    <CheckCircle2 className="w-4 h-4 text-[#A34354] flex-shrink-0" />
+                                    <span className="text-[13px] font-medium text-gray-700 leading-snug">{area}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -217,17 +227,18 @@ export default function AboutPage() {
                             light
                             className="mb-14"
                         />
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {whySacs.map((item) => (
-                            <div
-                                key={item.title}
-                                className="p-7 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm transition-all hover:bg-white/[0.06]"
-                            >
-                                <h3 className="font-display font-bold text-[18px] text-white mb-3">{item.title}</h3>
-                                <p className="text-[14px] text-white/60 leading-relaxed">{item.desc}</p>
-                            </div>
-                        ))}
+                        <div className="reveal-stagger grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {whySacs.map((item) => (
+                                <div
+                                    key={item.title}
+                                    className="group relative p-7 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm transition-all hover:bg-white/[0.06] overflow-hidden"
+                                >
+                                    <YellowBorderBeam rx={16} />
+                                    <h3 className="font-display font-bold text-[18px] text-white mb-3">{item.title}</h3>
+                                    <p className="text-[14px] text-white/60 leading-relaxed">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -244,25 +255,7 @@ export default function AboutPage() {
                     />
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {teamMembers.slice(0, 3).map((member) => (
-                            <Link
-                                key={member.id}
-                                to="/team"
-                                className="card-sacs overflow-hidden group flex flex-col"
-                            >
-                                <div className="relative aspect-[4/5] overflow-hidden bg-gray-100">
-                                    <ImageWithFallback
-                                        src={member.photo}
-                                        alt={member.photoAlt}
-                                        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#2A1F4A]/80 to-transparent" />
-                                    <div className="absolute bottom-0 left-0 right-0 p-5">
-                                        <h3 className="font-display font-bold text-[17px] text-white">{member.name}</h3>
-                                        <p className="text-[13px] text-[#E0BEC8] mt-0.5">{member.designation}</p>
-                                    </div>
-                                </div>
-                                <p className="p-5 text-[13.5px] text-gray-600 leading-relaxed line-clamp-3">{member.summary}</p>
-                            </Link>
+                            <TeamCard key={member.id} member={member} />
                         ))}
                     </div>
                     <div className="mt-10 text-center">
@@ -307,7 +300,8 @@ export default function AboutPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-lg">
+                        <div className="image-card-animated group relative rounded-2xl overflow-hidden aspect-[4/3] shadow-lg">
+                            <YellowBorderBeam rx={16} />
                             <ImageWithFallback
                                 src="https://images.pexels.com/photos/30475501/pexels-photo-30475501.jpeg?auto=compress&cs=tinysrgb&w=900&h=675&dpr=1"
                                 alt="Airplanes on runway with mountain backdrop"
@@ -337,7 +331,8 @@ export default function AboutPage() {
                             { title: 'IAF / MoD', desc: 'Indian Air Force / Ministry of Defence, height clearance NOC and aeronautical studies.' },
                             { title: 'Ministry of Civil Aviation', desc: 'Policy framework, national aviation programmes and project coordination.' },
                         ].map((item) => (
-                            <div key={item.title} className="p-6 rounded-xl border border-gray-100 bg-white hover:shadow-md transition-all">
+                            <div key={item.title} className="card-sacs group p-6 rounded-xl border border-gray-100 bg-white hover:shadow-md transition-all relative overflow-hidden">
+                                <YellowBorderBeam rx={12} />
                                 <h3 className="font-display font-bold text-[16px] text-[#402E6D] mb-2.5">{item.title}</h3>
                                 <p className="text-[13.5px] text-gray-600 leading-relaxed">{item.desc}</p>
                             </div>
