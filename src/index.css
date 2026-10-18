@@ -33,11 +33,6 @@
         font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
         letter-spacing: -0.02em;
     }
-
-    ::selection {
-        background-color: rgba(163, 67, 84, 0.15);
-        color: #402E6D;
-    }
 }
 
 @layer components {
