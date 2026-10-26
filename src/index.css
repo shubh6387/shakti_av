@@ -30,8 +30,8 @@
     h4,
     h5,
     h6 {
-        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-        letter-spacing: -0.02em;
+        font-family: 'Times New Roman', Times, 'Liberation Serif', serif;
+        letter-spacing: -0.01em;
     }
 }
 
@@ -101,17 +101,17 @@
 
     .yellow-beam-stroke {
         stroke: #FACC15;
-        stroke-width: 2.5px;
+        stroke-width: 1.5px;
         stroke-dasharray: 28 72;
         stroke-dashoffset: 0;
         stroke-linecap: round;
-        filter: drop-shadow(0 0 5px rgba(250, 204, 21, 0.95)) drop-shadow(0 0 10px rgba(234, 179, 8, 0.75));
+        filter: drop-shadow(0 0 3px rgba(250, 204, 21, 0.85)) drop-shadow(0 0 6px rgba(234, 179, 8, 0.5));
         opacity: 0;
         transition: opacity 0.3s ease;
         will-change: stroke-dashoffset, opacity;
     }
 
-    /* Hover: Moving clockwise from top-left corner to right completing the whole cycle continuously */
+    /* Hover only: Moving clockwise around border continuously */
     .card-sacs:hover .yellow-beam-stroke,
     .image-card-animated:hover .yellow-beam-stroke,
     .group:hover .yellow-beam-stroke,
@@ -121,53 +121,6 @@
         opacity: 1 !important;
         animation: yellowBeamRun 2.2s linear infinite !important;
         animation-delay: 0ms !important;
-    }
-
-    /* Scroll reveal: Triggered when element enters viewport, completes full cycle from top-left to right */
-    .revealed .yellow-beam-stroke,
-    .revealed.card-sacs .yellow-beam-stroke,
-    .revealed.image-card-animated .yellow-beam-stroke,
-    .reveal-stagger.revealed .yellow-beam-stroke,
-    .reveal-stagger-cards.revealed .yellow-beam-stroke {
-        animation: yellowBeamRunScroll 2.8s cubic-bezier(0.35, 0, 0.25, 1) 1 forwards;
-    }
-
-    /* Staggered delay for cards in grid on scroll */
-    .reveal-stagger-cards.revealed > *:nth-child(1) .yellow-beam-stroke,
-    .revealed .reveal-stagger-cards > *:nth-child(1) .yellow-beam-stroke,
-    .reveal-stagger.revealed > *:nth-child(1) .yellow-beam-stroke,
-    .revealed .reveal-stagger > *:nth-child(1) .yellow-beam-stroke {
-        animation-delay: 100ms;
-    }
-    .reveal-stagger-cards.revealed > *:nth-child(2) .yellow-beam-stroke,
-    .revealed .reveal-stagger-cards > *:nth-child(2) .yellow-beam-stroke,
-    .reveal-stagger.revealed > *:nth-child(2) .yellow-beam-stroke,
-    .revealed .reveal-stagger > *:nth-child(2) .yellow-beam-stroke {
-        animation-delay: 200ms;
-    }
-    .reveal-stagger-cards.revealed > *:nth-child(3) .yellow-beam-stroke,
-    .revealed .reveal-stagger-cards > *:nth-child(3) .yellow-beam-stroke,
-    .reveal-stagger.revealed > *:nth-child(3) .yellow-beam-stroke,
-    .revealed .reveal-stagger > *:nth-child(3) .yellow-beam-stroke {
-        animation-delay: 300ms;
-    }
-    .reveal-stagger-cards.revealed > *:nth-child(4) .yellow-beam-stroke,
-    .revealed .reveal-stagger-cards > *:nth-child(4) .yellow-beam-stroke,
-    .reveal-stagger.revealed > *:nth-child(4) .yellow-beam-stroke,
-    .revealed .reveal-stagger > *:nth-child(4) .yellow-beam-stroke {
-        animation-delay: 400ms;
-    }
-    .reveal-stagger-cards.revealed > *:nth-child(5) .yellow-beam-stroke,
-    .revealed .reveal-stagger-cards > *:nth-child(5) .yellow-beam-stroke,
-    .reveal-stagger.revealed > *:nth-child(5) .yellow-beam-stroke,
-    .revealed .reveal-stagger > *:nth-child(5) .yellow-beam-stroke {
-        animation-delay: 500ms;
-    }
-    .reveal-stagger-cards.revealed > *:nth-child(6) .yellow-beam-stroke,
-    .revealed .reveal-stagger-cards > *:nth-child(6) .yellow-beam-stroke,
-    .reveal-stagger.revealed > *:nth-child(6) .yellow-beam-stroke,
-    .revealed .reveal-stagger > *:nth-child(6) .yellow-beam-stroke {
-        animation-delay: 600ms;
     }
 
     .link-underline {
@@ -385,23 +338,6 @@
     }
 }
 
-/* Single 360° clockwise cycle on scroll reveal, then gracefully fades out */
-@keyframes yellowBeamRunScroll {
-    0% {
-        opacity: 0;
-        stroke-dashoffset: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    85% {
-        opacity: 1;
-    }
-    100% {
-        stroke-dashoffset: -100;
-        opacity: 0;
-    }
-}
 
 /* ==========================================================================
    Client Carousel Marquee Animation (Sliding from Right to Left)

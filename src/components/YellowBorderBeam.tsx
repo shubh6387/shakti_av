@@ -6,9 +6,10 @@ interface YellowBorderBeamProps {
 
 export default function YellowBorderBeam({
     rx = 16,
-    strokeWidth = 2.5,
+    strokeWidth = 1.5,
     className = '',
 }: YellowBorderBeamProps) {
+    const half = strokeWidth / 2;
     return (
         <svg
             className={`pointer-events-none absolute inset-0 h-full w-full rounded-[inherit] overflow-visible z-20 ${className}`}
@@ -16,8 +17,8 @@ export default function YellowBorderBeam({
             aria-hidden="true"
         >
             <rect
-                x="1.5"
-                y="1.5"
+                x={half}
+                y={half}
                 rx={rx}
                 fill="none"
                 stroke="#FACC15"
@@ -28,8 +29,8 @@ export default function YellowBorderBeam({
                 strokeLinecap="round"
                 className="yellow-beam-stroke"
                 style={{
-                    width: 'calc(100% - 3px)',
-                    height: 'calc(100% - 3px)',
+                    width: `calc(100% - ${strokeWidth}px)`,
+                    height: `calc(100% - ${strokeWidth}px)`,
                 }}
             />
         </svg>

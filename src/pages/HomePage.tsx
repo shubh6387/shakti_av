@@ -27,13 +27,13 @@ const orgJsonLd = {
     foundedDate: '2005',
     address: {
         '@type': 'PostalAddress',
-        streetAddress: '#544, DLF Prime Towers, F – 79 & 80, Okhla Industrial Area Phase – 1',
+        streetAddress: '#537, DLF Prime Towers, F – 79 & 80, Okhla Industrial Area Phase – 1',
         addressLocality: 'New Delhi',
         addressRegion: 'Delhi',
         postalCode: '110020',
         addressCountry: 'IN',
     },
-    telephone: ['+91-9773944770', '+91-9810789223', '+91-8860948094', '+91-11-41112778'],
+    telephone: ['+91-9773944770', '+91-9810789223', '+91-11-41112778'],
     description:
         'Aviation consultancy, airport development, airport operations, CNS/ATM, safety management, security, surveillance and aviation infrastructure solutions in India and international markets.',
     knowsAbout: [
@@ -63,7 +63,7 @@ const professionalServiceJsonLd = {
     priceRange: '$$',
     address: {
         '@type': 'PostalAddress',
-        streetAddress: '#544, DLF Prime Towers, F – 79 & 80, Okhla Industrial Area Phase – 1',
+        streetAddress: '#537, DLF Prime Towers, F – 79 & 80, Okhla Industrial Area Phase – 1',
         addressLocality: 'New Delhi',
         addressRegion: 'Delhi',
         postalCode: '110020',
