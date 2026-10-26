@@ -46,9 +46,9 @@ export default function Hero() {
 
                     {/* Main heading: fades in and moves upward */}
                     <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-[64px] xl:text-[72px] leading-[1.08] text-white text-balance drop-shadow-sm animate-hero-heading">
-                        Engineering the Future of{' '}
+                        Aviation & Airport{' '}
                         <span className="bg-gradient-to-r from-[#8CCBFF] via-[#42A5F5] to-[#0077B6] bg-clip-text text-transparent">
-                            Aviation Infrastructure
+                            Consultancy Services in India
                         </span>
                     </h1>
 

@@ -23,7 +23,7 @@ export default function ProjectsPage() {
 
             <PageHero
                 eyebrow="Our Work"
-                title="Projects & Industry Experience"
+                title="Airport Consultancy Projects"
                 subtitle="A cross-section of consultancy assignments spanning airport development, CNS/ATM technical studies, aeronautical studies, NOC consultancy and international aviation projects."
                 image="https://images.pexels.com/photos/12858453/pexels-photo-12858453.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1"
                 imageAlt="Aerial view of airport runway and terminal area at twilight"

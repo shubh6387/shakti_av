@@ -125,7 +125,7 @@ export default function HomePage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="About SACS"
-                        title="Decades of Aviation Expertise. Built for Complex Projects."
+                        title="About Sakthi Aviation Consultancy Services."
                         subtitle="Established in 2005 by retired senior civil aviation executives, delivering trusted consultancy across India and abroad."
                         className="mb-14"
                     />
@@ -212,7 +212,7 @@ export default function HomePage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Our Services"
-                        title="Integrated Aviation & Infrastructure Solutions"
+                        title="Our Aviation Consultancy Services"
                         subtitle="Specialized consultancy, technical services and implementation support for aviation, infrastructure and security environments."
                         align="center"
                         className="mb-14"
@@ -241,7 +241,7 @@ export default function HomePage() {
                 <div className="container-sacs relative z-10">
                     <SectionHeading
                         eyebrow="Core Expertise"
-                        title="Where Aviation Knowledge Meets Engineering Execution"
+                        title="Airport Infrastructure, CNS/ATM & Safety Expertise"
                         subtitle="Specialized technical domains covering airport infrastructure, CNS/ATM, safety management systems and regulatory clearance."
                         light
                         className="mb-14"
@@ -276,7 +276,7 @@ export default function HomePage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Specialized Consultancy"
-                        title="Specialized Aviation Height Clearance & NOC Consultancy"
+                        title="Height Clearance & NOC Consultancy (AAI, IAF, MoD)"
                         subtitle="Aeronautical studies, technical evaluation and structural height NOC approvals with AAI, IAF and MoD."
                         className="mb-14"
                     />
@@ -325,7 +325,7 @@ export default function HomePage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Selected Work"
-                        title="Projects & Industry Experience"
+                        title="Airport Consultancy Projects"
                         subtitle="A cross-section of consultancy assignments spanning airport development, CNS/ATM, aeronautical studies and international aviation projects."
                         align="center"
                         className="mb-14"
@@ -366,7 +366,7 @@ export default function HomePage() {
                     <div ref={intlRef} className="reveal">
                         <SectionHeading
                             eyebrow="Global Reach"
-                            title="International Consultancy Experience"
+                            title="International Airport Projects (Gabon, Nepal)"
                             subtitle="SACS has delivered aviation consultancy beyond India, supporting airport projects in international markets."
                             align="center"
                             light
@@ -408,7 +408,7 @@ export default function HomePage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Our Clients"
-                        title="Selected Organizations & Clients"
+                        title="Our Clients"
                         subtitle="SACS has provided consultancy and technical services to organizations across infrastructure, real estate, energy, construction, aviation and government sectors."
                         align="center"
                         className="mb-14"
@@ -428,7 +428,7 @@ export default function HomePage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Leadership"
-                        title="Experienced Aviation Professionals"
+                        title="Our Aviation Consultants"
                         subtitle="Our senior team brings decades of hands-on experience from AAI, DGCA, airport operations, CNS/ATM and aviation safety management."
                         align="center"
                         className="mb-14"
@@ -452,7 +452,7 @@ export default function HomePage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Knowledge & Research"
-                        title="Knowledge, Research & Industry Contributions"
+                        title="Aviation Publications & Research"
                         subtitle="Publications and reports authored by our senior professionals, contributing to the body of knowledge in aviation and air navigation."
                         align="center"
                         className="mb-14"
@@ -483,7 +483,7 @@ export default function HomePage() {
 
             {/* CTA */}
             <CTASection
-                title="Have an Aviation Consultancy Requirement?"
+                title="Contact Our Aviation Consultants"
                 subtitle="From airport development to height clearance NOC and CNS/ATM consultancy, our team is ready to discuss your project."
                 primaryLabel="Talk to Our Experts"
                 primaryPath="/contact"
