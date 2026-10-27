@@ -172,7 +172,7 @@ export default function ServiceDetailPage() {
             {/* Discuss Your Aviation Project */}
             <section className="py-16 lg:py-20 bg-section-alt">
                 <div className="container-sacs">
-                    <h2 className="font-display font-bold text-2xl text-gray-900 mb-8 text-center">Discuss Your Aviation Project</h2>
+                    <h2 className="font-display font-bold text-2xl text-gray-900 mb-8 text-center">Related Other Services</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {related.map((s) => {
                             const RelatedIcon = s.icon;
