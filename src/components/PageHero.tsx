@@ -22,7 +22,7 @@ export default function PageHero({ eyebrow, title, subtitle, image, imageAlt, br
                     className="w-full h-full object-cover"
                     loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#2A1F4A]/90 via-[#2A1F4A]/80 to-[#2A1F4A]/85" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#2A1F4A]/75 via-[#2A1F4A]/50 to-[#2A1F4A]/35" />
             </div>
             <div className="absolute inset-0 aviation-grid opacity-20" aria-hidden="true" />
 

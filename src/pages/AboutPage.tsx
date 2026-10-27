@@ -62,7 +62,7 @@ export default function AboutPage() {
             <PageHero
                 eyebrow="About SACS"
                 title="About Sakthi Aviation Consultancy Services"
-                subtitle="Founded in 2005 by retired senior management executives from the civil aviation ecosystem, SACS provides specialised aviation consultancy and implementation solutions across India and international markets."
+                // subtitle="Founded in 2005 by retired senior management executives from the civil aviation ecosystem, SACS provides specialised aviation consultancy and implementation solutions across India and international markets."
                 image="https://images.pexels.com/photos/14999417/pexels-photo-14999417.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1"
                 imageAlt="Air traffic control towers at Amsterdam Schiphol Airport"
                 breadcrumbs={[{ label: 'About' }]}
