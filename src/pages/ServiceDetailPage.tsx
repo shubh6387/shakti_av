@@ -32,7 +32,7 @@ export default function ServiceDetailPage() {
         areaServed: ['India', 'International'],
     };
 
-    // Related services (same index +/- 1)
+    // Discuss Your Aviation Project (same index +/- 1)
     const currentIndex = services.findIndex((s) => s.slug === service.slug);
     const related = services.filter((_, i) => Math.abs(i - currentIndex) <= 2 && i !== currentIndex).slice(0, 3);
 
@@ -105,7 +105,7 @@ export default function ServiceDetailPage() {
 
                             {/* Deliverables */}
                             <div ref={deliverablesRef} className="reveal mt-12">
-                                <h2 className="font-display font-bold text-xl text-gray-900 mb-6">Key Deliverables</h2>
+                                <h2 className="font-display font-bold text-xl text-gray-900 mb-6">Project Consultancy Deliverables</h2>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                     {service.deliverables.map((item) => (
                                         <div
@@ -169,10 +169,10 @@ export default function ServiceDetailPage() {
                 </div>
             </section>
 
-            {/* Related services */}
+            {/* Discuss Your Aviation Project */}
             <section className="py-16 lg:py-20 bg-section-alt">
                 <div className="container-sacs">
-                    <h2 className="font-display font-bold text-2xl text-gray-900 mb-8 text-center">Related Services</h2>
+                    <h2 className="font-display font-bold text-2xl text-gray-900 mb-8 text-center">Discuss Your Aviation Project</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {related.map((s) => {
                             const RelatedIcon = s.icon;
@@ -195,7 +195,7 @@ export default function ServiceDetailPage() {
             </section>
 
             <CTASection
-                title="Ready to Move Forward?"
+                title="Discuss Your Aviation Project"
                 subtitle={`Contact our team to discuss your ${service.title.toLowerCase()} requirement in detail.`}
                 primaryLabel="Contact SACS"
                 primaryPath="/contact"

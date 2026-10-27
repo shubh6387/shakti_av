@@ -271,7 +271,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* AAI / IAF / MoD NOC Consultancy */}
+            {/* Height Clearance & AAI NOC Consultancy in India */}
             <section className="py-20 lg:py-28 overflow-hidden">
                 <div className="container-sacs">
                     <SectionHeading
@@ -311,7 +311,7 @@ export default function HomePage() {
                                     </div>
                                 ))}
                             </div>
-                            <Link to="/services/aai-iaf-mod-noc-consultancy" className="btn-primary">
+                            <Link to="/services/height-clearance-noc-consultancy" className="btn-primary">
                                 Discuss Height Clearance / NOC
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
@@ -325,7 +325,7 @@ export default function HomePage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Selected Work"
-                        title="Airport Consultancy Projects"
+                        title="Airport & Aviation Consultancy Projects"
                         subtitle="A cross-section of consultancy assignments spanning airport development, CNS/ATM, aeronautical studies and international aviation projects."
                         align="center"
                         className="mb-14"
@@ -367,7 +367,7 @@ export default function HomePage() {
                         <SectionHeading
                             eyebrow="Global Reach"
                             title="International Airport Projects (Gabon, Nepal)"
-                            subtitle="SACS has delivered aviation consultancy beyond India, supporting airport projects in international markets."
+                            subtitle="SACS has delivered aviation International Aviation Consultancy, supporting airport projects in international markets."
                             align="center"
                             light
                             className="mb-12"

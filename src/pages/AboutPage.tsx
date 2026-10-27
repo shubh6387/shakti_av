@@ -61,7 +61,7 @@ export default function AboutPage() {
 
             <PageHero
                 eyebrow="About SACS"
-                title="Decades of Aviation Expertise, Delivered with Precision"
+                title="About Sakthi Aviation Consultancy Services"
                 subtitle="Founded in 2005 by retired senior management executives from the civil aviation ecosystem, SACS provides specialised aviation consultancy and implementation solutions across India and international markets."
                 image="https://images.pexels.com/photos/14999417/pexels-photo-14999417.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1"
                 imageAlt="Air traffic control towers at Amsterdam Schiphol Airport"
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Company Overview"
-                        title="A Consultancy Built on Real Aviation Experience"
+                        title="Aviation Consultancy Company Profile"
                         subtitle="Bridging the gap between deep civil aviation expertise and complex infrastructure execution."
                         className="mb-14"
                     />
@@ -131,7 +131,7 @@ export default function AboutPage() {
                     <div ref={journeyRef} className="reveal">
                         <SectionHeading
                             eyebrow="Our Journey"
-                            title="Evolving with India's Aviation Sector"
+                            title="Our Journey Since 2005"
                             subtitle="Since 2005, SACS has grown alongside India's aviation expansion from airport privatization to greenfield development and regional connectivity."
                             align="center"
                             className="mb-14"
@@ -195,7 +195,7 @@ export default function AboutPage() {
                     <div ref={expertiseRef} className="reveal">
                         <SectionHeading
                             eyebrow="Industry Expertise"
-                            title="Comprehensive Aviation Domain Coverage"
+                            title="Aviation Consultancy Domains"
                             subtitle="Our expertise spans the full spectrum of aviation operations, infrastructure, safety, security and regulatory consultancy."
                             align="center"
                             className="mb-14"
@@ -222,7 +222,7 @@ export default function AboutPage() {
                     <div ref={whyRef} className="reveal">
                         <SectionHeading
                             eyebrow="Why SACS"
-                            title="The SACS Advantage"
+                            title="Why Choose Sakthi Aviation Consultancy"
                             align="center"
                             light
                             className="mb-14"
@@ -248,7 +248,7 @@ export default function AboutPage() {
                 <div className="container-sacs">
                     <SectionHeading
                         eyebrow="Leadership"
-                        title="Senior Leadership & Technical Experts"
+                        title="Leadership Team"
                         subtitle="Our team brings direct experience from AAI, DGCA, CNS/ATM, airport operations and safety management."
                         align="center"
                         className="mb-14"
@@ -274,7 +274,7 @@ export default function AboutPage() {
                         <div>
                             <SectionHeading
                                 eyebrow="International Experience"
-                                title="Consultancy Beyond India"
+                                title="International Aviation Consultancy"
                                 className="mb-6"
                             />
                             <div className="space-y-4 text-[15px] leading-relaxed text-gray-600">
@@ -312,13 +312,13 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Regulatory & Technical Expertise */}
+            {/* AAI, DGCA, IAF & MoD Regulatory Expertise */}
             <section className="py-20 lg:py-28">
                 <div className="container-sacs">
                     <div ref={regRef} className="reveal">
                         <SectionHeading
                             eyebrow="Regulatory & Technical"
-                            title="Regulatory & Technical Expertise"
+                            title="AAI, DGCA, IAF & MoD Regulatory Expertise"
                             subtitle="Direct experience with India's aviation regulatory framework and technical systems."
                             align="center"
                             className="mb-14"
@@ -342,7 +342,7 @@ export default function AboutPage() {
             </section>
 
             <CTASection
-                title="Ready to Discuss Your Aviation Project?"
+                title="Contact Our Aviation Consultants"
                 subtitle="Our team is available to discuss your consultancy requirements from airport development to height clearance and CNS/ATM."
                 primaryLabel="Talk to Our Experts"
                 primaryPath="/contact"

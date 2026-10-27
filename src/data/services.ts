@@ -121,7 +121,7 @@ export const services: ServiceItem[] = [
         id: '6',
         slug: 'aviation-security-surveillance',
         icon: Cctv,
-        title: 'Aviation Security & Surveillance',
+        title: 'Aviation Security & Surveillance Systems Consultancy',
         shortDescription:
             'Security and surveillance systems, CCTV, fire alarm, public address and related security infrastructure solutions.',
         image: 'https://images.pexels.com/photos/4318372/pexels-photo-4318372.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&dpr=1',
@@ -140,7 +140,7 @@ export const services: ServiceItem[] = [
         id: '7',
         slug: 'aai-iaf-mod-noc-consultancy',
         icon: FileCheck,
-        title: 'AAI / IAF / MoD NOC Consultancy',
+        title: 'Height Clearance & AAI NOC Consultancy in India',
         shortDescription:
             'Technical consultancy for structural height clearance, aeronautical studies, AAI NOC, IAF/MoD cases and related aviation obstruction matters.',
         image: 'https://images.pexels.com/photos/1928072/pexels-photo-1928072.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&dpr=1',
