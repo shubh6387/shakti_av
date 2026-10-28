@@ -36,7 +36,7 @@ export default function PageHero({ eyebrow, title, subtitle, image, imageAlt, br
                         <span className="eyebrow-light">{eyebrow}</span>
                         <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#8CCBFF]" />
                     </div>
-                    <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-[50px] leading-[1.1] text-white text-balance text-center">
+                    <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-[30px] leading-[1.1] text-white text-balance text-center">
                         {title}
                     </h1>
                     {subtitle && (

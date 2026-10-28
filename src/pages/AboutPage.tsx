@@ -9,6 +9,7 @@ import YellowBorderBeam from '@/components/YellowBorderBeam';
 import TeamCard from '@/components/TeamCard';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { teamMembers } from '@/data/team';
+import about_hero from '@/assets/about_hero.png'
 
 export default function AboutPage() {
     const overviewRef = useScrollReveal<HTMLDivElement>();
@@ -63,7 +64,7 @@ export default function AboutPage() {
                 eyebrow="About SACS"
                 title="About Sakthi Aviation Consultancy Services"
                 // subtitle="Founded in 2005 by retired senior management executives from the civil aviation ecosystem, SACS provides specialised aviation consultancy and implementation solutions across India and international markets."
-                image="https://images.pexels.com/photos/14999417/pexels-photo-14999417.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1"
+                image={about_hero}
                 imageAlt="Air traffic control towers at Amsterdam Schiphol Airport"
                 breadcrumbs={[{ label: 'About' }]}
             />

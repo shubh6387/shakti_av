@@ -60,7 +60,7 @@ export default function Navbar() {
                         <img
                             src={logo}
                             alt="SACS Aviation Consultancy Services"
-                            className="h-10 w-auto object-contain"
+                            className="h-[5rem] w-auto object-contain"
                         />
                     </Link>
 
